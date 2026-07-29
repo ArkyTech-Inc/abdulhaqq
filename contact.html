@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<meta name="description" content="Get in touch">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<!--Start of sidebar Content-->
+
+  <div class="layout">
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="sidebar-backdrop"></div>
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <a href="index.html" class="logo"> Abdulhaqq </a>
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+      <hr class="sidebar-divider">
+      <div class="socials">
+        <a class="social-btn" href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+        <a class="social-btn" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a class="social-btn" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a class="social-btn" href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21c1-3 2-6.5 2-6.5M12 3a7 7 0 0 0-3 13.3M12 3a7 7 0 0 1 0 14c-1 0-2-.2-2.8-.6"/></svg></a>
+        <a class="social-btn" href="#" aria-label="Youtube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><polygon points="10,9 16,12 10,15" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+      <p class="copyright">&copy; Abdulhaqq 2026 </p>
+    </div>
+  </aside>
+<!--End of sidebar Content-->
+
+
+<!-- Main content -->
+  <main class="content" id="main">
+    <div class="page-header">
+      <p class="eyebrow">Contact</p>
+      <h1 class="page-title">Let&rsquo;s work together</h1>
+      <hr class="rule">
+      <p style="max-width:640px;">I help organizations design and implement systems that improve their operations. 
+        <br>Feel free to reach out below.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <div class="contact-info-item">
+          <span>Email</span>
+          <strong>motolanisomoye@gmail.com</strong>
+        </div>
+        <div class="contact-info-item">
+          <span>Phone</span>
+          <strong>+234 810 331 2462</strong>
+        </div>
+        <div class="contact-info-item">
+          <span>Location</span>
+          <strong>Abuja, Nigeria</strong>
+        </div>
+        <div class="socials" style="margin-top:32px;">
+          <a class="social-btn" href="#" aria-label="Twitter">&#8599;</a>
+          <a class="social-btn" href="#" aria-label="Instagram">&#8599;</a>
+          <a class="social-btn" href="#" aria-label="LinkedIn">&#8599;</a>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your Name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="your.email@example.com" required>
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Project inquiry">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project&hellip;" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </main>
+</div>
+<!-- End of main content -->
+
+<script src="script.js"></script>
+</body>
+</html>

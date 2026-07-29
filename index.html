@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Home </title>
+<meta name="description" content="Personal portfolio home page">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="content" id="main">
+<div class="layout">
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+
+  <header class="navbar">
+  <div class="navbar-inner"> 
+    <!-- Primary Navigation Links -->
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#case-studies" class="nav-link">Portfolio</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#" class="nav-link">Articles</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Social Links (LinkedIn & GitHub) -->
+    <div class="socials">
+      <a class="social-btn" href="https://linkedin.com/in/abdulhaqq-somoye" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a class="social-btn" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+
+    <main class="content">
+      <section class="hero" id="home">
+      <div class="hero-photo">
+        <div class="hero-photo-frame">
+            <img src="images/profile.jpg" alt="Abdulhaqq Motolani Somoye" class="hero-photo-img">
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="kicker"> </p>
+        <h2>Technology & Business Operator </h2>
+        <hr class="rule">
+        <p>I design systems that improve how organizations operate. I focus on understanding the problem before designing practical solutions that people willingly adopt—combining operations, process design, and technology to improve execution.</p>
+        <p class="signature">Abdulhaqq Motolani Somoye</p>
+        <div style="margin-top:28px; display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="portfolio.html" class="btn">View Portfolio</a>
+          <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="section">
+      <p class="eyebrow">At A Glance</p>
+      <h2 class="section-title">Who am i?</h2>
+      <p class="section-lede"> I design systems that improve how organizations operate. I identify operational problems, design practical solutions, and implement them to improve execution. I focus on understanding the problem before designing practical solutions that people willingly adopt—combining operations, process design, and technology to improve execution.</p>
+    </section>
+
+    <section class="section" id="case-studies">
+      <p class="eyebrow">Case Studies</p>
+      <h2 class="section-title">Selected case studies</h2>
+      <div class="grid grid-3" style="margin-top:28px;">
+        <div class="card">
+          <div class="card-thumb">SRAP Dashboard</div>
+          <span class="tag">Performance</span>
+          <h3>National KPI Tracking</h3>
+          <p>Led design of an interactive KPI dashboard to improve visibility and decision-making for a national performance framework.</p>
+        </div>
+        <div class="card">
+          <div class="card-thumb">Innovation Hub</div>
+          <span class="tag">Operations</span>
+          <h3>Booking & Authorization System</h3>
+          <p>Designed an internal booking system with approval workflows to manage access, utilization, and administrative oversight.</p>
+        </div>
+        <div class="card">
+          <div class="card-thumb">Community</div>
+          <span class="tag">Education</span>
+          <h3>Astronomy Community Initiative</h3>
+          <p>Founded an initiative to build community, partnerships, and capacity for accessible astronomy education and outreach.</p>
+        </div>
+      </div>
+    </section>
+
+     <!--Added-->
+     <section class="section" id="about">
+   <div class="page-header">
+      <p class="eyebrow">About Me</p>
+      <h2 class="page-title">What do i do ?</h2>
+      <hr class="rule">
+      <p style="max-width:760px;">I design systems that improve how organizations operate. I identify operational problems, understand stakeholder needs, and design practical systems that improve efficiency through technology, process redesign, and data-informed decision making.</p>
+      
+      </div>
+
+
+      <div class="hero-text">
+        <h2>Understanding systems before building solutions</h2>
+        <p>My career began in Health Education, and I discovered a stronger interest in how systems influence outcomes. That curiosity led me to technology—not to code for its own sake, but to use software as a tool to solve organizational problems.</p>
+        <p>I focus on asking the right questions: Why is a process designed this way? Who experiences the most friction? Where does information slow down? Answers to these questions shape solutions people actually use.</p>
+        <br>
+        <br>
+        <p class="eyebrow">Philosophy</p>
+      <h2 class="section-title">People, process, and technology</h2>
+      <p>I don't believe technology creates transformation alone. Transformation happens when people, processes, and technology align. My work prioritizes understanding the problem before designing the solution so teams adopt and benefit from the systems we build.</p>
+  
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Approach</p>
+      <h2 class="section-title">Discover • Analyze • Design • Implement</h2>
+      <div style="margin-top:10px;">
+        <h4>Discover</h4>
+        <p>Speak with stakeholders, observe workflows, and question assumptions to understand the real problem.</p>
+        <h4>Analyze</h4>
+        <p>Map processes, identify bottlenecks, and prioritize user needs to define clear objectives.</p>
+        <h4>Design</h4>
+        <p>Translate requirements into practical systems that simplify workflows and improve visibility.</p>
+        <h4>Implement</h4>
+        <p>Build, iterate, validate with users, and improve continuously.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Case Studies</p>
+      <h2 class="section-title">Selected engagements</h2>
+      <div class="timeline" style="margin-top:18px;">
+        <div class="timeline-item">
+          <p class="date">01 — SRAP Tracking Dashboard</p>
+          <h4>Role: Team Lead</h4>
+          <p>Built an interactive KPI dashboard to centralize national performance indicators and improve decision-making across initiatives.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="date">02 — Innovation Hub Booking System</p>
+          <h4>Role: Designer</h4>
+          <p>Designed a booking and authorization workflow to manage facility usage, approvals, and utilization reporting.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="date">03 — Astronomy Community Initiative</p>
+          <h4>Role: Founder</h4>
+          <p>Founded a community to increase access to astronomy education, build partnerships, and prepare for sustainable funding.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="date">04 — Technology Solutions Company</p>
+          <h4>Role: Founder</h4>
+          <p>Started a company, ArkyTech Inc. to provide innovative technology solutions and build applications to create value for Nigeria and the world at large.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Professional Summary</p>
+      <h2 class="section-title">Summary & Core Competencies</h2>
+      <p style="max-width:760px;">A business and technology operations professional with progressive experience across administration, IT operations, process improvement, stakeholder coordination, and business operations improvement. I deliver systems and processes that reduce friction, improve visibility, and enable better decisions.</p>
+      <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
+        <span class="tag">IT Operations & Governance</span>
+        <span class="tag">Cloud & Enterprise Systems</span>
+        <span class="tag">Business Process Improvement</span>
+        <span class="tag">Software Design & Development</span>
+        <span class="tag">Stakeholder Management</span>
+        <span class="tag">Research & Analysis</span>
+        <span class="tag">Power BI • SQL • Python</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Professional Experience</p>
+      <h2 class="section-title">What have i done?</h2>
+      <div class="timeline" style="margin-top:18px;">
+        <div class="timeline-item">
+          <p class="date">June 2025 — Apr 2026</p>
+          <h4>Operations Associate (NYSC) — National Information Technology Development Agency (NITDA), Abuja</h4>
+          <br>
+            <p >Supported review and development of national technology policy documents, collaborating with internal and external stakeholders and consultants.</p>
+            <p>Coordinated stakeholder input and documentation workflows, streamlining review processes and improving turnaround on policy submissions.</p>
+            <p>Designed and developed three institutional digital systems: BYOD Portal (device registration and audit logging), SRAP 2.0 National Tracking System (national KPI monitoring), and NITDA Innovation Hub Booking System (facility booking and approvals).</p>
+            <p>Drafted Nigeria’s initial response to the 2025 Digital Cooperation Organization (DCO) report and GAPS assessment.</p>
+            <p>Maintained operational knowledge-sharing systems and internal documentation to support cross-team alignment.</p>
+          </div>
+
+        <div class="timeline-item">
+          <p class="date">2019 — 2024</p>
+          <h4>Regional Operations Manager — Takleema Global Links Ltd (Lagos & Kwara)</h4>
+            <p>Coordinated inventory and materials for large-scale construction projects and managed day-to-day facility oversight.</p>
+            <p>Managed multi-state logistics, documentation, and a regional team of staff and contractors, contributing to regional expansion and revenue growth.</p>
+            <p>Introduced standardized record-keeping and reporting frameworks using Excel and Google Sheets to improve accuracy and audit readiness.</p>
+            <p>Led onboarding and training programs to improve process compliance and reduce onboarding errors.</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Education & Certifications</p>
+      <h2 class="section-title">Education & Professional Development</h2>
+      <div style="margin-top:12px;">
+        <p><strong>B.Sc. (Ed.) Health Education</strong> — University of Ilorin</p>
+        <p style="margin-top:8px;"><strong>Certifications</strong></p>
+        <div>
+          <p>Financial Modeling and Financial Statement Analysis — LinkedIn (2026)</p>
+          <p>Microsoft Excel Data Analysis Bootcamp — Udemy (2025)</p>
+          <p>Google Cloud Developer — Google Africa Developers Scholarship (2020)</p>
+          <p>The Data Scientist Toolbox — Johns Hopkins University, LinkedIn (2019)</p>
+          <p>Hybrid Mobile App Development — FEMTECH I.T (2017)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Skills</p>
+      <h2 class="section-title">I'm comfortable with...</h2>
+      <div style="margin-top:20px;">
+        <span class="tag">Microsoft Office 365</span><span class="tag">AI Tools</span><span class="tag">PowerBI</span>
+        <span class="tag">Software Development</span><span class="tag">Business Analysis</span><span class="tag">ERP Systems</span>
+      </div>
+    </section>
+  </div>
+<!--End-->
+</div>
+<script src="script.js"></script>
+</body>
+</html>
