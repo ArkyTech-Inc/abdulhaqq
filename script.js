@@ -1,44 +1,42 @@
 document.addEventListener("DOMContentLoaded", function () {
   var toggle = document.querySelector(".menu-toggle");
   var sidebar = document.querySelector(".sidebar");
+  var nav = document.querySelector(".nav");
   var backdrop = document.querySelector(".sidebar-backdrop");
 
   function closeMenu() {
-    sidebar.classList.remove("is-open");
-    toggle.classList.remove("is-open");
-    backdrop.classList.remove("is-open");
-    toggle.setAttribute("aria-expanded", "false");
+    if (sidebar) sidebar.classList.remove("is-open");
+    if (nav) nav.classList.remove("is-open");
+    if (toggle) toggle.classList.remove("is-open");
+    if (backdrop) backdrop.classList.remove("is-open");
+    if (toggle) toggle.setAttribute("aria-expanded", "false");
   }
 
   function openMenu() {
-    sidebar.classList.add("is-open");
-    toggle.classList.add("is-open");
-    backdrop.classList.add("is-open");
-    toggle.setAttribute("aria-expanded", "true");
+    if (sidebar) sidebar.classList.add("is-open");
+    if (nav) nav.classList.add("is-open");
+    if (toggle) toggle.classList.add("is-open");
+    if (backdrop) backdrop.classList.add("is-open");
+    if (toggle) toggle.setAttribute("aria-expanded", "true");
   }
 
-  if (toggle && sidebar && backdrop) {
+  if (toggle && (sidebar || nav)) {
     toggle.addEventListener("click", function () {
-      if (sidebar.classList.contains("is-open")) {
-        closeMenu();
-      } else {
-        openMenu();
-      }
+      var isOpen = (sidebar && sidebar.classList.contains("is-open")) || (nav && nav.classList.contains("is-open"));
+      if (isOpen) closeMenu(); else openMenu();
     });
-    backdrop.addEventListener("click", closeMenu);
+    if (backdrop) backdrop.addEventListener("click", closeMenu);
 
-    // Close menu on nav link click (mobile)
     document.querySelectorAll(".nav-link").forEach(function (link) {
       link.addEventListener("click", closeMenu);
     });
 
-    // Close on escape
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape") closeMenu();
     });
   }
 
-  // Simple contact form handler (front-end only placeholder)
+  // Contact form handler (unchanged)
   var form = document.querySelector(".contact-form");
   if (form) {
     form.addEventListener("submit", function (e) {
